@@ -1,0 +1,80 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 71, 119);
+}
+.loop{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    z-index: 999;
+    transition: .5s;
+}
+.main{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+.cover{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(5, 226, 255);
+    border-radius: 100px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+    transition: .5s;
+}
+.text-box{
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 38px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -999;
+    transition: s;
+    background-color: rgb(46, 46, 46);
+    border: none;
+    transition: .5s;
+    padding-left: 10px;
+    outline: none;
+}
+div img.loop:hover{
+    cursor: pointer;
+    transition: .5s;
+}
+div:hover > .loop{
+    transform: translateX(80px);
+    cursor: pointer;
+    transition: .5s;
+}
+div:hover > div{
+    transform: translateX(80px);
+    cursor: pointer;
+    transition: .5s;
+}
+div.main:hover > input{
+    display: block;
+    z-index: -999;
+    transition: .5s;
+    width: 200px;
+    height: 45px;
+}
+.p{
+    color: whitesmoke;
+    position: absolute;
+    top: 52%;
+    left: 47.4%;
+}
